@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | BAROUCH</title>
+    <link rel="stylesheet" href="loign.css">
+    <link rel="shortcut icon" href="update.png" type="image/x-icon">
+</head>
+<body>
+
+<div class="container">
+    <div class="form-card">
+
+        <h2>Login</h2>
+        <p class="subtitle">Welcome back to the world of cinema 🎬</p>
+
+        <form action="enter.html" method="get" id="loginForm" >
+
+            <label>Email Address</label>
+            <input type="email" id="email" placeholder="example@gmail.com" required>
+
+            <label>Password</label>
+            <input type="password" id="password" placeholder="********" required>
+
+            <button  type="submit" class="btn" >Login</button>
+
+            <p  href="entre.html" class="login-text">
+                Don't have an account?
+                <a href="signup.html">Create one</a>
+            </p>
+
+        </form>
+
+    </div>
+</div>
+
+<script>
+// نظام تسجيل الدخول البسيط
+document.getElementById("loginForm").onsubmit = function(e){
+    e.preventDefault();
+
+    let user = JSON.parse(localStorage.getItem("userData"));
+
+    if(!user){
+        alert("No account found! Please create an account first.");
+        return;
+    }
+
+    let email = document.getElementById("email").value;
+    let pass = document.getElementById("password").value;
+
+    // تحقق بسيط
+    if(email === user.email && pass === user.password){
+        alert("Login successful!");
+        window.location.href = "entre.html"; 
+    } else {
+        alert("Incorrect email or password!");
+    }
+}
+</script> 
+
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0;
+    margin: 0;
+}
+a{
+    color: white;
+    text-decoration: none;
+
+   
+}
+body{
+    background-image: linear-gradient(to right: #fff00f, #00000088;);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-image: linear-gradient(to right, #01022de4 30%, #00000087),
+    url(sfr.jpg);
+    background-position: center;
+    width: 100%;
+    height: 100% ;
+}
+.container:hover{
+    background-image: linear-gradient(to right, #01022db4 10%, transparent),
+    url(one.jpg);
+
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    font-family: initial,cursive;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 2%;
+    color: rgb(226, 242, 4);
+    
+}
+ul{
+    width: 60%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul a{
+    border-bottom: 2px solid transparent;
+}
+ul a:hover{
+    border-bottom-color: white;
+}
+.content{
+    
+    width: 50%;
+    margin-top: 50px;
+    padding: 30px;
+}
+.content h2{
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #05eba6;
+    
+}
+.content p{
+    letter-spacing: 3px;
+    width: 460px;
+    padding: 20px 0;
+    color: white;
+}
+.content button{
+    font-size: 30px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+.content button:hover{
+    background-color: rgb(230, 37, 37);
+    border-color: rgb(6, 5, 5);
+    color: rgb(68, 209, 32);
+}
+.click{
+    background-color: aquamarine;
+} 
+
